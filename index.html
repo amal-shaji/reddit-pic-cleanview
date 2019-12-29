@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simple Reddit Images</title>
+		<link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/aos.css"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<script>
+			document.documentElement.className = 'js';
+			var supportsCssVars = function() {
+				var s = document.createElement('style'),
+				support;
+
+				s.innerHTML = "root: { --tmp-var: bold; }";
+				document.head.appendChild(s);
+				support = !!(window.CSS && window.CSS.supports && window.CSS.supports('font-weight', 'var(--tmp-var)'));
+				s.parentNode.removeChild(s);
+				return support;
+			}
+			if (!supportsCssVars()) alert('Please view this demo in a modern browser that supports CSS Variables.')
+		</script>
+	</head>
+	<body class="demo-2 loading">
+		<main>
+			
+			<div class="content content--fixed">
+				<a href="/">
+					<header class="header">
+						<img src="./img/logo.png" width= "100vh"alt="">
+					</header>
+				</a>
+				<div class="nav-container nav">
+					<ul>
+						<li>Home</li>
+						<li>Startups</li>
+						<li>Products</li>
+					</ul>
+				</div>
+				
+				
+				<div class="deco deco--title">Reddit Images By <a href="https://github.com/amal-shaji">Amal Shaji</a></div>
+			</div>
+			<div id="top">
+				<div id="notice">
+					Append The Subreddit Name In The URL To Get New Posts.
+					<br>
+					<a href="?earthporn">?earthporn</a>
+					<br>
+					<a href="?wallpapers">?wallpapers</a>
+				</div>
+			</div>
+
+			<div id="fullpage">
+
+			</div>
+			<!-- Related demos -->
+			
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/demo2.js"></script>
+		<script src="js/ui.js"></script>
+		<script src="/js/aos.js"></script>
+		<script>
+			AOS.init({
+			  offset: 200,
+			  duration: 300,
+			  easing: 'ease-in-sine',
+			  delay: 100,
+			});
+		</script>
+	</body>
+</html>
