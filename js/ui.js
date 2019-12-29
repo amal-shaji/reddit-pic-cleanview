@@ -2,7 +2,7 @@ if(window.location.search) {
   // Fetch
       const query = window.location.search;
       const subreddit = query.replace(/[^a-zA-Z0-9 ]/g, "");
-      fetch(`http://www.reddit.com/r/${subreddit}/new.json?limit=9`)
+      fetch(`https://reddit.com/r/${subreddit}/new.json?limit=9`)
         .then(res => res.json())
         .then(data => {
             let results = data.data.children.map(data => data.data)
