@@ -463,6 +463,16 @@ a:focus {
 	.content--layout-3 .content__title{
 		left: 0.5em;
 	}
+	#top{
+	height: 80vh;
+}
+	#notice{
+	font-size: 2em;
+	padding-top: 2em;
+	font-family: "Montserrat";
+	font-weight: bold;
+	line-height: 1.2;
+}
 	
 }
 
