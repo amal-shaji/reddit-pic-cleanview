@@ -426,7 +426,7 @@ a:focus {
 	
 	.content__title{
 		right: 2em;
-		font-size: 6em;
+		font-size: 3em;
 		position: relative;
 	}
 	.content__img{
@@ -467,7 +467,7 @@ a:focus {
 	height: 80vh;
 }
 	#notice{
-	font-size: 2em;
+	font-size: 2.5em;
 	padding-top: 2em;
 	font-family: "Montserrat";
 	font-weight: bold;
